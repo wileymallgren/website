@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Wiley Mallgren – Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page { size: Letter; margin: 0.5in 0.6in; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+      font-size: 10pt;
+      line-height: 1.36;
+      color: #16202a;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    header { text-align: center; margin-bottom: 6pt; }
+    h1 { font-size: 22pt; font-weight: 700; letter-spacing: -0.02em; margin: 0; }
+    .tagline { font-size: 10.5pt; color: #2c4a5e; font-weight: 600; margin: 2pt 0 4pt; }
+    .contact { font-size: 8.9pt; white-space: nowrap; color: #5b6876; }
+    .contact span + span::before { content: "·"; margin: 0 5pt; color: #9aa6b2; }
+
+    section { margin-top: 9pt; }
+    h2 {
+      font-size: 10pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #2c4a5e;
+      margin: 0 0 6pt;
+      padding-bottom: 3pt;
+      border-bottom: 1.2pt solid #2c4a5e;
+    }
+
+    .entry { margin-bottom: 6pt; break-inside: avoid; }
+    .entry:last-child { margin-bottom: 0; }
+    .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
+    .title { font-weight: 600; }
+    .org { font-weight: 600; }
+    .sub { font-style: italic; color: #3a4754; }
+    .date { color: #5b6876; font-size: 9.4pt; white-space: nowrap; }
+    .loc { color: #5b6876; font-size: 9.4pt; white-space: nowrap; }
+
+    ul { margin: 3pt 0 0; padding-left: 13pt; }
+    li { margin: 1.5pt 0; padding-left: 1pt; }
+    li::marker { color: #2c4a5e; }
+
+    .skills { display: grid; grid-template-columns: max-content 1fr; gap: 3pt 12pt; }
+    .skills dt { font-weight: 600; }
+    .skills dd { margin: 0; }
+    .detail { margin: 2pt 0 0; }
+    .detail b { font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wiley Mallgren</h1>
+    <p class="tagline">Data Science Student · University of California, Davis</p>
+    <p class="contact">
+      <span><a href="mailto:wileymallgren@icloud.com">wileymallgren@icloud.com</a></span>
+      <span><a href="https://www.linkedin.com/in/wiley-mallgren">linkedin.com/in/wiley-mallgren</a></span>
+      <span><a href="https://github.com/wileymallgren">github.com/wileymallgren</a></span>
+      <span><a href="https://wileymallgren.github.io/website/">wileymallgren.github.io/website</a></span>
+    </p>
+  </header>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="row"><span class="org">University of California, Davis</span><span class="loc">Davis, CA</span></div>
+      <div class="row"><span class="sub">B.S. Data Science · Sophomore standing (75.75 units via AP and dual-enrollment credit)</span><span class="date">Expected Jun 2030</span></div>
+      <p class="detail"><b>Current:</b> Statistical Data Science I (STA 35A), Calculus (MAT 21C)</p>
+      <p class="detail"><b>AP credit:</b> Calculus BC (5), Statistics (5), CS Principles (5), CS A (4), Physics 1 (5), Chemistry (5)</p>
+    </div>
+    <div class="entry">
+      <div class="row"><span><span class="org">Maria Carrillo High School</span> <span class="sub">· with dual enrollment at Santa Rosa Junior College</span></span><span class="date">Aug 2022 – Jun 2026</span></div>
+      <p class="detail"><b>Honors:</b> AP Scholar with Distinction, North Coast Section President’s List, California Seal of Biliteracy (eligible)</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Programming</dt><dd>Python (pandas, NumPy), R, SQL</dd>
+      <dt>Data &amp; Statistics</dt><dd>Statistical analysis and inference, survey analysis, data reporting</dd>
+      <dt>ML &amp; Computer Vision</dt><dd>YOLO object detection, Hailo AI accelerator, Raspberry Pi</dd>
+      <dt>Languages</dt><dd>English (native), Spanish (professional working proficiency)</dd>
+      <dt>Certifications</dt><dd>American Red Cross Lifeguard, CPR / AED</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="entry">
+      <div class="row"><span><span class="title">Real-Time AI Object Detection</span> <span class="sub">· Maria Carrillo AI &amp; ML Club</span></span><span class="date">Python, YOLO, Hailo, Raspberry Pi</span></div>
+      <ul>
+        <li>Deployed a YOLO model on a Raspberry Pi with a Hailo AI accelerator for real-time inference</li>
+        <li>Detected people and objects in a live camera feed, drawing bounding boxes with confidence scores</li>
+        <li>Demoed the system live at a community expo, explaining to visitors how computer vision models work</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="entry">
+      <div class="row"><span class="org">Sonoma Hacks</span><span class="date">Jun 2025 – Jun 2026</span></div>
+      <div class="row"><span class="sub">Director of Data &amp; Analytics / Project Manager</span></div>
+      <ul>
+        <li>Tracked and analyzed registration data (sign-ups, attendance, demographics) for global high school hackathons</li>
+        <li>Built reports on event metrics for the organizing team and sponsors</li>
+        <li>Analyzed participant and mentor survey feedback to improve future events</li>
+        <li>Tracked the budget and prizes for thousands of dollars in sponsor funds</li>
+        <li>Secured mentor workshops from professionals at a range of tech companies</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="org">Maria Carrillo AI &amp; Machine Learning Club</span><span class="date">Aug 2024 – Jun 2026</span></div>
+      <div class="row"><span class="sub">Vice President (Since Founding)</span></div>
+      <ul>
+        <li>Led discussions on the math behind AI/ML and its applications, risks, and costs in society</li>
+        <li>Helped run the club since informal meetings began in Aug 2023, a year before it was officially founded</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="org">City of Santa Rosa, Howarth Park</span><span class="date">Jun 2025 – Present</span></div>
+      <div class="row"><span class="sub">Lifeguard</span></div>
+      <ul>
+        <li>Uphold water safety as part of a team, enforce lake rules, and assist customers with boat rentals</li>
+        <li>Mentor volunteers</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>
